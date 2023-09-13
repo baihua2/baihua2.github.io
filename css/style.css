@@ -24,9 +24,33 @@
       display: none;
   }
 }
-  
+
+/* 二级菜单栏居中*/  
 #nav .menus_items .menus_item:hover .menus_item_child{
-  display: -65px;
+  display: flex;
+}
+/* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+  left: -85px;
+}
+.menus_items .menus_item:nth-child(3) .menus_item_child {
+  left: -85px;
+}
+/*网站运行时间*/
+div#runtime {
+  width: fit-content;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
+[data-theme="dark"] div#runtime {
+  color: #28b4c8;
+  box-shadow: 0 0 5px rgba(28, 69, 218, 0.71);
+}
 
+/*页脚改为透明色*/
+#footer:before {
+  content: none !important;
+}

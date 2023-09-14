@@ -36,16 +36,21 @@
 .menus_items .menus_item:nth-child(3) .menus_item_child {
   left: -85px;
 }
-/*网站运行时间*/
+/* 网站运行时间容器 */
 div#runtime {
   width: fit-content;
   color: #fff;
   padding: 0 10px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(244, 244, 244, 0); /* 透明背景 */
+  margin:auto
+  /*display: flex;
+  justify-content: center; /* 水平居中 */
+  /*align-items: center; /* 垂直居中 */
+  /*text-align: center; /* 文本居中 */
 }
 
-[data-theme="dark"] div#runtime {
+[data-theme="write"] div#runtime {
   color: #28b4c8;
   box-shadow: 0 0 5px rgba(28, 69, 218, 0.71);
 }

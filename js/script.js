@@ -32,6 +32,7 @@ setInterval(() => {
     /*if (time[0] != 0) {
         currentTimeHtml += time[0] + ' 年 '
     }*/
-    currentTimeHtml += time[1] + ' 天 ' + time[2] + ' 时 ' + time[3] + ' 分 ' + time[4]+'秒';
+    currentTimeHtml +='本站已经运行：'+ time[1] + ' 天 ' + time[2] + ' 时 ' + time[3] + ' 分 ' + time[4]+'秒';
     document.getElementById("runtime").innerHTML = currentTimeHtml;
 }, 1000);
+

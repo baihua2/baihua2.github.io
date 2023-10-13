@@ -261,7 +261,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo.netlify.app/.netlify/functions/twikoo',
+      envId: 'https://vercel-kwikoo.vercel.app/',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -273,7 +273,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikoo.netlify.app/.netlify/functions/twikoo',
+      envId: 'https://vercel-kwikoo.vercel.app/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false

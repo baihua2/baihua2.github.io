@@ -261,7 +261,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://vercel-5iltodmof-baihua2.vercel.app/',
+      envId: 'https://www.baihua.live',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -273,7 +273,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://vercel-5iltodmof-baihua2.vercel.app/',
+      envId: 'https://www.baihua.live',
       region: '',
       urls: [window.location.pathname],
       includeReply: false

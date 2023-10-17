@@ -3,11 +3,11 @@
   <title>Hi,这是白桦的博客！</title>
   
   
-  <link href="http://baihua.live/atom.xml" rel="self"/>
+  <link href="https://www.baihua.live/atom.xml" rel="self"/>
   
-  <link href="http://baihua.live/"/>
+  <link href="https://www.baihua.live/"/>
   <updated>2023-10-08T14:38:39.019Z</updated>
-  <id>http://baihua.live/</id>
+  <id>https://www.baihua.live/</id>
   
   <author>
     <name>白桦</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>川西小环线 康定-丹巴-四姑娘山</title>
-    <link href="http://baihua.live/2023/10/08/08%20%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/%C2%B7%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/"/>
-    <id>http://baihua.live/2023/10/08/08%20%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/%C2%B7%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/</id>
+    <link href="https://www.baihua.live/2023/10/08/08%20%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/%C2%B7%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/"/>
+    <id>https://www.baihua.live/2023/10/08/08%20%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/%C2%B7%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/</id>
     <published>2023-10-08T14:24:53.746Z</published>
     <updated>2023-10-08T14:38:39.019Z</updated>
     
@@ -30,19 +30,19 @@
     
     
     
-    <category term="生活这点小事" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
+    <category term="生活这点小事" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
     
-    <category term="旅行" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E6%97%85%E8%A1%8C/"/>
     
     
-    <category term="川西小环线" scheme="http://baihua.live/tags/%E5%B7%9D%E8%A5%BF%E5%B0%8F%E7%8E%AF%E7%BA%BF/"/>
+    <category term="川西小环线" scheme="https://www.baihua.live/tags/%E5%B7%9D%E8%A5%BF%E5%B0%8F%E7%8E%AF%E7%BA%BF/"/>
     
   </entry>
   
   <entry>
     <title>纪念奶奶</title>
-    <link href="http://baihua.live/2023/09/15/07%20%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/"/>
-    <id>http://baihua.live/2023/09/15/07%20%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/</id>
+    <link href="https://www.baihua.live/2023/09/15/07%20%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/"/>
+    <id>https://www.baihua.live/2023/09/15/07%20%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/</id>
     <published>2023-09-14T23:48:45.190Z</published>
     <updated>2023-09-15T00:21:28.241Z</updated>
     
@@ -53,19 +53,19 @@
     
     
     
-    <category term="生活这点小事" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
+    <category term="生活这点小事" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
     
-    <category term="家人" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E5%AE%B6%E4%BA%BA/"/>
+    <category term="家人" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E5%AE%B6%E4%BA%BA/"/>
     
     
-    <category term="家人" scheme="http://baihua.live/tags/%E5%AE%B6%E4%BA%BA/"/>
+    <category term="家人" scheme="https://www.baihua.live/tags/%E5%AE%B6%E4%BA%BA/"/>
     
   </entry>
   
   <entry>
     <title>我和一座城.乐山</title>
-    <link href="http://baihua.live/2023/09/14/06%20%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E.%E4%B9%90%E5%B1%B1/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E-%E4%B9%90%E5%B1%B1/"/>
-    <id>http://baihua.live/2023/09/14/06%20%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E.%E4%B9%90%E5%B1%B1/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E-%E4%B9%90%E5%B1%B1/</id>
+    <link href="https://www.baihua.live/2023/09/14/06%20%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E.%E4%B9%90%E5%B1%B1/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E-%E4%B9%90%E5%B1%B1/"/>
+    <id>https://www.baihua.live/2023/09/14/06%20%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E.%E4%B9%90%E5%B1%B1/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E-%E4%B9%90%E5%B1%B1/</id>
     <published>2023-09-14T14:51:33.971Z</published>
     <updated>2023-09-14T15:33:37.270Z</updated>
     
@@ -76,19 +76,19 @@
     
     
     
-    <category term="生活这点小事" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
+    <category term="生活这点小事" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
     
-    <category term="旅行" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E6%97%85%E8%A1%8C/"/>
     
     
-    <category term="我和一座城" scheme="http://baihua.live/tags/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E/"/>
+    <category term="我和一座城" scheme="https://www.baihua.live/tags/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E/"/>
     
   </entry>
   
   <entry>
     <title>PSRR测试</title>
-    <link href="http://baihua.live/2023/09/14/05%20PSRR%E6%B5%8B%E8%AF%95/PSRR%E6%B5%8B%E8%AF%95/"/>
-    <id>http://baihua.live/2023/09/14/05%20PSRR%E6%B5%8B%E8%AF%95/PSRR%E6%B5%8B%E8%AF%95/</id>
+    <link href="https://www.baihua.live/2023/09/14/05%20PSRR%E6%B5%8B%E8%AF%95/PSRR%E6%B5%8B%E8%AF%95/"/>
+    <id>https://www.baihua.live/2023/09/14/05%20PSRR%E6%B5%8B%E8%AF%95/PSRR%E6%B5%8B%E8%AF%95/</id>
     <published>2023-09-14T14:29:46.426Z</published>
     <updated>2023-09-14T14:41:39.642Z</updated>
     
@@ -99,19 +99,19 @@
     
     
     
-    <category term="一个硬件开发者" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    <category term="一个硬件开发者" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
     
-    <category term="硬件测试" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="硬件测试" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="电源" scheme="http://baihua.live/tags/%E7%94%B5%E6%BA%90/"/>
+    <category term="电源" scheme="https://www.baihua.live/tags/%E7%94%B5%E6%BA%90/"/>
     
   </entry>
   
   <entry>
     <title>相噪测试</title>
-    <link href="http://baihua.live/2023/09/14/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/"/>
-    <id>http://baihua.live/2023/09/14/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/</id>
+    <link href="https://www.baihua.live/2023/09/14/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/"/>
+    <id>https://www.baihua.live/2023/09/14/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/</id>
     <published>2023-09-14T14:07:38.625Z</published>
     <updated>2023-09-14T14:28:09.542Z</updated>
     
@@ -122,19 +122,19 @@
     
     
     
-    <category term="一个硬件开发者" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    <category term="一个硬件开发者" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
     
-    <category term="硬件测试" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="硬件测试" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="时钟" scheme="http://baihua.live/tags/%E6%97%B6%E9%92%9F/"/>
+    <category term="时钟" scheme="https://www.baihua.live/tags/%E6%97%B6%E9%92%9F/"/>
     
   </entry>
   
   <entry>
     <title>抖动</title>
-    <link href="http://baihua.live/2023/09/14/03%20%E6%8A%96%E5%8A%A8/%E6%8A%96%E5%8A%A8/"/>
-    <id>http://baihua.live/2023/09/14/03%20%E6%8A%96%E5%8A%A8/%E6%8A%96%E5%8A%A8/</id>
+    <link href="https://www.baihua.live/2023/09/14/03%20%E6%8A%96%E5%8A%A8/%E6%8A%96%E5%8A%A8/"/>
+    <id>https://www.baihua.live/2023/09/14/03%20%E6%8A%96%E5%8A%A8/%E6%8A%96%E5%8A%A8/</id>
     <published>2023-09-14T13:25:33.935Z</published>
     <updated>2023-09-14T14:04:10.838Z</updated>
     
@@ -145,19 +145,19 @@
     
     
     
-    <category term="一个硬件开发者" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    <category term="一个硬件开发者" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
     
-    <category term="硬件测试" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="硬件测试" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="时钟" scheme="http://baihua.live/tags/%E6%97%B6%E9%92%9F/"/>
+    <category term="时钟" scheme="https://www.baihua.live/tags/%E6%97%B6%E9%92%9F/"/>
     
   </entry>
   
   <entry>
     <title>纹波噪声测试</title>
-    <link href="http://baihua.live/2023/09/11/02%20%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2/%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/"/>
-    <id>http://baihua.live/2023/09/11/02%20%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2/%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/</id>
+    <link href="https://www.baihua.live/2023/09/11/02%20%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2/%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/"/>
+    <id>https://www.baihua.live/2023/09/11/02%20%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2/%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/</id>
     <published>2023-09-11T13:04:55.245Z</published>
     <updated>2023-09-14T14:06:01.798Z</updated>
     
@@ -168,19 +168,19 @@
     
     
     
-    <category term="一个硬件开发者" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    <category term="一个硬件开发者" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/"/>
     
-    <category term="硬件测试" scheme="http://baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="硬件测试" scheme="https://www.baihua.live/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="电源" scheme="http://baihua.live/tags/%E7%94%B5%E6%BA%90/"/>
+    <category term="电源" scheme="https://www.baihua.live/tags/%E7%94%B5%E6%BA%90/"/>
     
   </entry>
   
   <entry>
     <title>保持热爱，奔赴山海</title>
-    <link href="http://baihua.live/2023/09/10/01%20%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/%E4%BF%9D%E6%8C%81%E7%83%AD%E7%88%B1%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/"/>
-    <id>http://baihua.live/2023/09/10/01%20%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/%E4%BF%9D%E6%8C%81%E7%83%AD%E7%88%B1%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/</id>
+    <link href="https://www.baihua.live/2023/09/10/01%20%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/%E4%BF%9D%E6%8C%81%E7%83%AD%E7%88%B1%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/"/>
+    <id>https://www.baihua.live/2023/09/10/01%20%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/%E4%BF%9D%E6%8C%81%E7%83%AD%E7%88%B1%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/</id>
     <published>2023-09-10T15:13:47.997Z</published>
     <updated>2023-09-14T13:19:44.707Z</updated>
     
@@ -191,12 +191,12 @@
     
     
     
-    <category term="生活这点小事" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
+    <category term="生活这点小事" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/"/>
     
-    <category term="旅行" scheme="http://baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://www.baihua.live/categories/%E7%94%9F%E6%B4%BB%E8%BF%99%E7%82%B9%E5%B0%8F%E4%BA%8B/%E6%97%85%E8%A1%8C/"/>
     
     
-    <category term="川西小环线" scheme="http://baihua.live/tags/%E5%B7%9D%E8%A5%BF%E5%B0%8F%E7%8E%AF%E7%BA%BF/"/>
+    <category term="川西小环线" scheme="https://www.baihua.live/tags/%E5%B7%9D%E8%A5%BF%E5%B0%8F%E7%8E%AF%E7%BA%BF/"/>
     
   </entry>
   

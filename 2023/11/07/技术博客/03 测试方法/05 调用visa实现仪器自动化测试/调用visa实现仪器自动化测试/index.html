@@ -1,0 +1,382 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>调用visa实现仪器自动化测试【1】 | Hi,这是白桦的博客！</title><meta name="author" content="白桦"><meta name="copyright" content="白桦"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="纪录下使用Python完成一些仪器自动化测试的思路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="调用visa实现仪器自动化测试【1】">
+<meta property="og:url" content="https://blog.baihua.live/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/03%20%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/05%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:site_name" content="Hi,这是白桦的博客！">
+<meta property="og:description" content="纪录下使用Python完成一些仪器自动化测试的思路">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2023/11/07/654a57501ed82.png">
+<meta property="article:published_time" content="2023-11-07T15:26:15.715Z">
+<meta property="article:modified_time" content="2024-04-15T14:51:51.563Z">
+<meta property="article:author" content="白桦">
+<meta property="article:tag" content="自动化测试">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2023/11/07/654a57501ed82.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.baihua.live/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/03%20%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/05%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 白桦","link":"链接: ","source":"来源: Hi,这是白桦的博客！","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '调用visa实现仪器自动化测试【1】',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-04-15 22:51:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css?1"><script type="text/javascript" src ="/js/reward.js" ></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.all.min.js"></script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hi,这是白桦的博客！" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/loading.gif" data-original="/img/avatar.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-solid fa-up-right-from-square"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-solid fa-map-pin"></i><span> 旅行</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于白桦</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://bu.dusays.com/2023/11/07/654a57501ed82.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Hi,这是白桦的博客！"><span class="site-name">Hi,这是白桦的博客！</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-solid fa-up-right-from-square"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-solid fa-map-pin"></i><span> 旅行</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于白桦</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">调用visa实现仪器自动化测试【1】</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-07T15:26:15.715Z" title="发表于 2023-11-07 23:26:15">2023-11-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-15T14:51:51.563Z" title="更新于 2024-04-15 22:51:51">2024-04-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/">一个硬件开发者</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%B8%80%E4%B8%AA%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">自动化测试</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="调用visa实现仪器自动化测试【1】"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>1、原理图&amp;PCB绘制</strong></p>
+<p><strong>1、测试环境准备</strong></p>
+<p><strong>1）测试环境应用基础</strong></p>
+<p>a.SCPI指令集</p>
+<p>可编程仪器标准命令，定义了一套用于控制可编程测试测量仪器的标准语法和命令。命令主要分为Set（控制）和Query（查询）两种。</p>
+<p>b. GPIB</p>
+<p>通用接口总线是一种设备和计算机连接的总线。大多数台式仪器是通过GPIB线以及GPIB接口与电脑相连，系统中最多不能超过15台仪器。</p>
+<p>如果是台式机或者笔记本作为主控机，需要买一个USB转GPIB的线。</p>
+<p>c.Visa</p>
+<p>Virtual instrument software architecture，虚拟仪器软件结构。可以使用网线连接仪器，通过网络地址来程控仪器，也可以通过GPIB线，使用端口程控仪器。</p>
+<p><strong>2）安装软件环境</strong></p>
+<p>a.安装Python： <a target="_blank" rel="noopener" href="http://www.zhanshaoyi.com/16338.html">http://www.zhanshaoyi.com/16338.html</a></p>
+<p>注意一定要勾选Add Python 3.9 to PATH，不然后面使用pip指令要重新添加环境变量，比较麻烦</p>
+<p><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a57501ed82.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p>b.安装vscode</p>
+<p>c.安装Python库</p>
+<p>值cmd命令行执行安装脚本：pip install pyvisa ，根据需求安装所需的Python库就可以了</p>
+<p>d.安装ipop</p>
+<p>软件下载： <a target="_blank" rel="noopener" href="http://rnd/zhanghao/ipop_4.1.exe">&#x2F;rnd&#x2F;zhanghao&#x2F;ipop_4.1.exe</a></p>
+<p>IPOP的主要目的是绑定虚拟ip，也可以直接修改ipv4的地址，但是个人觉得ipop用起来更加方便推荐ipop，绑定虚拟ip的主要目的和仪器进行连接，注意要选择和实际网口对应的网卡端口，绑定和仪器相同的网段</p>
+<p><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a575647527.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p>通过ipconfig 即可查看是否绑定成功</p>
+<p><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a575256175.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p>如果可以pin 通就可以进行下一步操作</p>
+<p><img src="/img/loading.gif" data-original="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/03%20%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/05%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/image_4.213b965b.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p><strong>2、程序运行</strong></p>
+<p><strong>1）使用DM3068高精度数字万用表实现自动化测试</strong></p>
+<p>通过编程手册查看调用的命令，编程手册下载链接： <a target="_blank" rel="noopener" href="http://rnd/zhanghao/dm3068_programmingguide_cn.chm">&#x2F;rnd&#x2F;zhanghao&#x2F;dm3068_programmingguide_cn.chm</a></p>
+<p>下面是使用DM6068测试电压的源码，可根据实际测试场景直接修改命令，打印信息添加了时间，便于和温箱曲线对应，注意温箱时间打印是1min一次，测试前需要将温箱时钟和本地时间进行校准</p>
+<pre><code>import pyvisa as visa
+import pandas as pd
+import numpy as np
+import datetime
+import time
+
+def pd\_toexcel(data, filename): # pandas库储存数据到excel
+dfData = &#123; # 用字典设置DataFrame所需数据
+&#39;Time&#39;: data\[0\],
+&#39;voltage&#39;: data\[1\]
+&#125;
+df = pd.DataFrame(dfData) # 创建DataFrame
+df.to\_excel(filename, index=False) # 存表，去除原始索引列（0,1,2...）
+
+FSW = visa.ResourceManager()
+FSW= FSW.open\_resource(&quot;TCPIP::169.254.27.54::INSTR&quot;) ##连接仪器
+
+\# :SOUR1:FUNC DC（信号发生器的输出指令）
+\# :SOUR1:APPL:DC 1,1,3.3 /\*设置 CH1 的波形为直流且偏移为 3.3V DC \*/
+
+vol = \[\]
+\# for i in range(10):
+i = 0
+TimeStr = \[\]
+while 1:
+voltage = FSW.query(&#39;:MEAS:VOLT:DC?&#39;)
+vol.append(voltage)
+print(i, voltage)
+time.sleep(1)
+i += 1
+
+\# voltage = FSW.query(&#39;:MEAS:VOLT:DC?&#39;) # 发送测量指令并读取测量结果
+\# print(&#39;DC电压测量结果为：&#39;, voltage)
+\# df = pd.read\_excel(&#39;ADCshujuchuli(2).xlsx&#39;, sheet\_name=&#39;Sheet1&#39;)
+\# TimeStr = np.array(list(df\[&#39;AA&#39;\].apply(lambda x: &#39;&#123;0:08b&#125;&#39;.format(x))))
+\# 生成1到5000的数组
+arr = list(range(1, 11))
+
+\# 将数组转为二进制表示
+TimeStr.append(datetime.datetime.now().strftime(&quot;%d-%H:%M:%S&quot;))
+testData = \[TimeStr, vol\]
+
+filename = &#39;BG\_Vol\_test.xlsx&#39;
+print(testData)
+pd\_toexcel(testData,filename)
+</code></pre>
+<p><strong>2）使用DS70000高速示波器实现自动化测试</strong></p>
+<p>DS70000编程手册下载： <a target="_blank" rel="noopener" href="http://rnd/zhanghao/ds70000_programmingguide_cn.pdf">&#x2F;rnd&#x2F;zhanghao&#x2F;ds70000_programmingguide_cn.pdf</a></p>
+<p>下面是使用DS70000测试频率的代码，可根据实际测试场景直接修改命令</p>
+<p>注意：测试切换ch的时候要添加最低3s的延迟才可操作下一个ch，如果实际太短内部继电器切换响应不及时，</p>
+<pre><code>import pyvisa as visa
+import pandas as pd
+import numpy as np
+import datetime
+import time
+
+def pd\_toexcel(data, filename): # pandas库储存数据到excel
+dfData = &#123; # 用字典设置DataFrame所需数据
+&#39;CHAN&#39;: data\[0\],
+&#39;Time&#39;: data\[1\],
+&#39;frequency&#39;: data\[2\]
+&#125;
+df = pd.DataFrame(dfData) # 创建DataFrame
+df.to\_excel(filename, index=False) # 存表，去除原始索引列（0,1,2...）
+
+FSW = visa.ResourceManager()
+FSW= FSW.open\_resource(&quot;TCPIP::192.168.0.99::INSTR&quot;) ##连接仪器
+\# FSW.write(&#39;:MEASure:COUNter:SOURce CHANnel2&#39;)
+\# CHAN = FSW.query(&#39;:MEASure:COUNter:SOURce?&#39;)
+fre = \[\]
+\# for i in range(10):
+i = 0
+channel = \[\]
+TimeStr = \[\]
+while 1:
+if i%4 == 0:
+FSW.write(&#39;:MEASure:COUNter:SOURce CHANnel1&#39;)
+time.sleep(3)
+elif i%4== 1:
+FSW.write(&#39;:MEASure:COUNter:SOURce CHANnel2&#39;)
+time.sleep(3)
+elif i%4 == 2:
+FSW.write(&#39;:MEASure:COUNter:SOURce CHANnel3&#39;)
+time.sleep(3)
+elif i%4 == 3:
+FSW.write(&#39;:MEASure:COUNter:SOURce CHANnel4&#39;)
+time.sleep(3)
+CHAN = FSW.query(&#39;:MEASure:COUNter:SOURce?&#39;)
+frequency = FSW.query(&#39;:MEASure:COUNter:VALue?&#39;)
+fre.append(frequency)
+print(i, frequency)
+i += 1
+
+\# frequency = FSW.query(&#39;:MEAS:freT:DC?&#39;) # 发送测量指令并读取测量结果
+\# print(&#39;DC电压测量结果为：&#39;, frequency)
+\# df = pd.read\_excel(&#39;ADCshujuchuli(2).xlsx&#39;, sheet\_name=&#39;Sheet1&#39;)
+\# TimeStr = np.array(list(df\[&#39;AA&#39;\].apply(lambda x: &#39;&#123;0:08b&#125;&#39;.format(x))))
+\# 生成1到5000的数组
+arr = list(range(1, 11))
+
+\# 将数组转为二进制表示
+TimeStr.append(datetime.datetime.now().strftime(&quot;%d-%H:%M:%S&quot;))
+channel.append(CHAN)
+testData = \[channel, TimeStr, fre\]
+
+filename = &#39;OSC\_test\_trim\_0615\_fuce.xlsx&#39;
+print(testData)
+pd\_toexcel(testData,filename)
+</code></pre>
+<p><strong>3、数据处理</strong></p>
+<p><strong>1）使用Excel进行数据处理</strong></p>
+<p>使用仪器自动化测试获取的数据，数据量通常非常多，为了便于查看和获取关键数据，当前使用Excel自带的数据处理的功能，后续如果有时间学习Python或者matlab等其他数据处理的方式在进行刷新。</p>
+<p>下面以Excel进行数据处理为例：</p>
+<p><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a575cea6ca.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p>原始数据是frequence，数据的表现形式是2.579835e+07的方式，可以采用数据分列的方式将原始数据转换为Excel可以进行运算的数值</p>
+<p><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a575f61a50.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p>最终的数据体现形式可以通过Excel的绘图或者其他形式进行承载</p>
+<p><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a5766513e6.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a57710b612.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p><strong>2）使用Python进行数据处理</strong></p>
+<p>学习中…</p>
+<p><strong>3）使用matlab进行数据处理</strong></p>
+<p>学习中…</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.baihua.live">白桦</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.baihua.live/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/03%20%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/05%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">https://blog.baihua.live/2023/11/07/技术博客/03 测试方法/05 调用visa实现仪器自动化测试/调用visa实现仪器自动化测试/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.baihua.live" target="_blank">Hi,这是白桦的博客！</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">自动化测试</a></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/11/07/654a57501ed82.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/04/15/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/01%20%E7%94%B5%E6%9C%BA%E7%9B%B8%E5%85%B3/01%20%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/" title="步进电机学习"><img class="cover" src="/img/loading.gif" data-original="https://bu.dusays.com/2024/04/15/661d42b28f60c.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">步进电机学习</div></div></a></div><div class="next-post pull-right"><a href="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/02%20%E8%8A%AF%E7%89%87%E5%AD%A6%E4%B9%A0/01%20CCU6%E5%AD%A6%E4%B9%A0/CCU6/" title="英飞凌CCU6学习"><img class="cover" src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a562820a47.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">英飞凌CCU6学习</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/loading.gif" data-original="/img/avatar.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">白桦</div><div class="author-info__description">努力工作，好好生活</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/baihua2" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="e-Mail:z103931204@163.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">谢谢你停留<br>技术博客内容仅交流学习，转载请注明，侵删，tks~</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/04/15/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/02%20%E8%8A%AF%E7%89%87%E5%AD%A6%E4%B9%A0/02%20SDFM/SDFM/" title="SDFM"><img src="/img/loading.gif" data-original="https://bu.dusays.com/2024/04/15/661d45be9556b.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SDFM"/></a><div class="content"><a class="title" href="/2024/04/15/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/02%20%E8%8A%AF%E7%89%87%E5%AD%A6%E4%B9%A0/02%20SDFM/SDFM/" title="SDFM">SDFM</a><time datetime="2024-04-15T15:10:37.639Z" title="发表于 2024-04-15 23:10:37">2024-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/15/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/01%20%E7%94%B5%E6%9C%BA%E7%9B%B8%E5%85%B3/01%20%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/" title="步进电机学习"><img src="/img/loading.gif" data-original="https://bu.dusays.com/2024/04/15/661d42b28f60c.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="步进电机学习"/></a><div class="content"><a class="title" href="/2024/04/15/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/01%20%E7%94%B5%E6%9C%BA%E7%9B%B8%E5%85%B3/01%20%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/" title="步进电机学习">步进电机学习</a><time datetime="2024-04-15T14:55:56.245Z" title="发表于 2024-04-15 22:55:56">2024-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/03%20%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/05%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/" title="调用visa实现仪器自动化测试【1】"><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a57501ed82.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="调用visa实现仪器自动化测试【1】"/></a><div class="content"><a class="title" href="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/03%20%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/05%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/" title="调用visa实现仪器自动化测试【1】">调用visa实现仪器自动化测试【1】</a><time datetime="2023-11-07T15:26:15.715Z" title="发表于 2023-11-07 23:26:15">2023-11-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/02%20%E8%8A%AF%E7%89%87%E5%AD%A6%E4%B9%A0/01%20CCU6%E5%AD%A6%E4%B9%A0/CCU6/" title="英飞凌CCU6学习"><img src="/img/loading.gif" data-original="https://bu.dusays.com/2023/11/07/654a562820a47.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="英飞凌CCU6学习"/></a><div class="content"><a class="title" href="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/02%20%E8%8A%AF%E7%89%87%E5%AD%A6%E4%B9%A0/01%20CCU6%E5%AD%A6%E4%B9%A0/CCU6/" title="英飞凌CCU6学习">英飞凌CCU6学习</a><time datetime="2023-11-07T15:20:13.387Z" title="发表于 2023-11-07 23:20:13">2023-11-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/04%20%E7%94%9F%E4%BA%A7%E5%8A%A0%E5%B7%A5&amp;%E4%BE%9B%E5%BA%94%E9%93%BE%E7%AE%A1%E7%90%86/01%20%E5%98%89%E7%AB%8B%E5%88%9BEDA%E5%8F%8A%E4%B8%8B%E5%8D%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/%E5%98%89%E7%AB%8B%E5%88%9B%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" title="嘉立创EDA及下单注意事项"><img src="/img/loading.gif" data-original="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/04%20%E7%94%9F%E4%BA%A7%E5%8A%A0%E5%B7%A5&amp;%E4%BE%9B%E5%BA%94%E9%93%BE%E7%AE%A1%E7%90%86/01%20%E5%98%89%E7%AB%8B%E5%88%9BEDA%E5%8F%8A%E4%B8%8B%E5%8D%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/%E5%98%89%E7%AB%8B%E5%88%9B%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/image_1.2359bf46.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="嘉立创EDA及下单注意事项"/></a><div class="content"><a class="title" href="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/04%20%E7%94%9F%E4%BA%A7%E5%8A%A0%E5%B7%A5&amp;%E4%BE%9B%E5%BA%94%E9%93%BE%E7%AE%A1%E7%90%86/01%20%E5%98%89%E7%AB%8B%E5%88%9BEDA%E5%8F%8A%E4%B8%8B%E5%8D%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/%E5%98%89%E7%AB%8B%E5%88%9B%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" title="嘉立创EDA及下单注意事项">嘉立创EDA及下单注意事项</a><time datetime="2023-11-07T15:14:52.316Z" title="发表于 2023-11-07 23:14:52">2023-11-07</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 白桦</div><div class="footer_custom_text"><div id="runtime"></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://www.baihua.live',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://www.baihua.live',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.textContent = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="/js/script.js?1"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>

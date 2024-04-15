@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>SDFM</title>
-    <url>/2024/04/15/13%20SDFM/SDFM/</url>
+    <url>/2024/04/15/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/13%20SDFM/SDFM/</url>
     <content><![CDATA[<p><strong>SDFM</strong></p>
 <p>Sigma Delta Filter Module (SDFM) is a four-channel digital filter designed specifically for <strong>current measurement</strong> in motor control applications</p>
 <p><img src="https://bu.dusays.com/2024/04/15/661d444be9e57.png" alt="image-20240415231416383"></p>
@@ -23,7 +23,7 @@
   </entry>
   <entry>
     <title>步进电机学习</title>
-    <url>/2024/04/15/12%20%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/</url>
+    <url>/2024/04/15/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/12%20%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>步进电机工作原理</strong></p>
 <p>原文链接：</p>
 <p><a href="https://www.nidec-group.cn/technology/motor/basic/00135">步进电机 | 尼得科&#x2F;NIDEC (nidec-group.cn)</a></p>
@@ -166,7 +166,7 @@
   </entry>
   <entry>
     <title>调用visa实现仪器自动化测试【1】</title>
-    <url>/2023/11/07/11%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</url>
+    <url>/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/11%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p><strong>1、原理图&amp;PCB绘制</strong></p>
 <p><strong>1、测试环境准备</strong></p>
 <p><strong>1）测试环境应用基础</strong></p>
@@ -191,7 +191,7 @@
 <p>通过ipconfig 即可查看是否绑定成功</p>
 <p><img src="https://bu.dusays.com/2023/11/07/654a575256175.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
 <p>如果可以pin 通就可以进行下一步操作</p>
-<p><img src="/2023/11/07/11%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/image_4.213b965b.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
+<p><img src="/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/11%20%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%B0%83%E7%94%A8visa%E5%AE%9E%E7%8E%B0%E4%BB%AA%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/image_4.213b965b.png" alt="Python 3.9.2正式版安装教程(附安装包)"></p>
 <p><strong>2、程序运行</strong></p>
 <p><strong>1）使用DM3068高精度数字万用表实现自动化测试</strong></p>
 <p>通过编程手册查看调用的命令，编程手册下载链接： <a href="http://rnd/zhanghao/dm3068_programmingguide_cn.chm">&#x2F;rnd&#x2F;zhanghao&#x2F;dm3068_programmingguide_cn.chm</a></p>
@@ -330,7 +330,7 @@ pd\_toexcel(testData,filename)
   </entry>
   <entry>
     <title>英飞凌CCU6学习</title>
-    <url>/2023/11/07/10%20CCU6%E5%AD%A6%E4%B9%A0/CCU6/</url>
+    <url>/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/10%20CCU6%E5%AD%A6%E4%B9%A0/CCU6/</url>
     <content><![CDATA[<p><strong>TEL9879 Jlink使用注意事项</strong></p>
 <p><strong>1、Jlink连接前准备</strong></p>
 <p>1）TEL9879 是Cortex®-M3 core</p>
@@ -400,7 +400,7 @@ pd\_toexcel(testData,filename)
   </entry>
   <entry>
     <title>嘉立创EDA及下单注意事项</title>
-    <url>/2023/11/07/09%20%E5%98%89%E7%AB%8B%E5%88%9BEDA%E5%8F%8A%E4%B8%8B%E5%8D%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/%E5%98%89%E7%AB%8B%E5%88%9B%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <url>/2023/11/07/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/09%20%E5%98%89%E7%AB%8B%E5%88%9BEDA%E5%8F%8A%E4%B8%8B%E5%8D%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/%E5%98%89%E7%AB%8B%E5%88%9B%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
     <content><![CDATA[<p><strong>1、原理图&amp;PCB绘制</strong></p>
 <p><strong>1）原理图</strong></p>
 <p>立创EDA安装路径：<a href="https://lceda.cn/page/download">软件下载 - 嘉立创EDA (lceda.cn)</a></p>
@@ -461,7 +461,7 @@ pd\_toexcel(testData,filename)
   </entry>
   <entry>
     <title>川西小环线 康定-丹巴-四姑娘山</title>
-    <url>/2023/10/08/08%20%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/%C2%B7%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/</url>
+    <url>/2023/11/02/%E9%9A%8F%E7%AC%94/08%20%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/%C2%B7%E5%BA%B7%E5%AE%9A-%E5%9B%9B%E5%A7%91%E5%A8%98%E5%B1%B1/</url>
     <content><![CDATA[<p><img src="https://bu.dusays.com/2023/10/18/652ff2767b761.png" alt="image-20231018225742664"></p>
 <p><strong>写在开篇</strong></p>
 <p>最近这一个月发生了比较多的事情，公司裁员（虽然自己暂时没有被优化），外公在国庆节去世，外加自己的懈怠，种种原因，个人blog停滞了差不多一个月，现在继续努力更新吧，把这些零零散散的事情记录下来，明天和意外谁先到，谁又知道呢，把握当下，过好每一天吧！</p>
@@ -538,7 +538,7 @@ pd\_toexcel(testData,filename)
   </entry>
   <entry>
     <title>纪念奶奶</title>
-    <url>/2023/09/15/07%20%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/</url>
+    <url>/2023/11/02/%E9%9A%8F%E7%AC%94/07%20%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/%E7%BA%AA%E5%BF%B5%E5%A5%B6%E5%A5%B6/</url>
     <content><![CDATA[<h1 id="噩耗"><a href="#噩耗" class="headerlink" title="噩耗"></a>噩耗</h1><img src="https://bu.dusays.com/2023/10/18/652feef016c7b.png" alt="1694735156251" style="zoom:80%;">
 
 <p>奶奶于2023年8月8日凌晨在家中因病去世，享年88岁。</p>
@@ -589,7 +589,7 @@ pd\_toexcel(testData,filename)
   </entry>
   <entry>
     <title>我和一座城.乐山</title>
-    <url>/2023/09/14/06%20%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E.%E4%B9%90%E5%B1%B1/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E-%E4%B9%90%E5%B1%B1/</url>
+    <url>/2023/11/02/%E9%9A%8F%E7%AC%94/02%20%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E.%E4%B9%90%E5%B1%B1/%E6%88%91%E5%92%8C%E4%B8%80%E5%BA%A7%E5%9F%8E-%E4%B9%90%E5%B1%B1/</url>
     <content><![CDATA[<h1 id="写在开始"><a href="#写在开始" class="headerlink" title="写在开始"></a><strong>写在开始</strong></h1><p>hi，大家好，这是白桦的第二篇推文，感谢您的阅读，这次纪录的是白桦和一座城的经历过往，生命很短暂，每走一段路就行记下来，这大概是笨小孩吧</p>
 <h1 id="初到乐山"><a href="#初到乐山" class="headerlink" title="初到乐山"></a><strong>初到乐山</strong></h1><p>第一次去乐山是在2019年5月，实验室安排我们到乐山师范学院去参观全国大学生智能汽车竞赛四川省省赛，参观学习比赛经验。初到乐山，炎热的天气也没能抵挡热情似火的赛场，两天时间竞赛尤其激烈，不仅让我们学习到了非常多nice的比赛经验，也让我们倍感压力，因为两个月后就是西部赛区的比赛，届时我们会和这样优秀的队伍进行比拼。</p>
 <img src="https://bu.dusays.com/2023/10/18/652fedfaea4ae.png" alt="1694703290973" style="zoom:50%;">
@@ -715,7 +715,7 @@ pd\_toexcel(testData,filename)
   </entry>
   <entry>
     <title>PSRR测试</title>
-    <url>/2023/09/14/05%20PSRR%E6%B5%8B%E8%AF%95/PSRR%E6%B5%8B%E8%AF%95/</url>
+    <url>/2023/11/02/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/05%20PSRR%E6%B5%8B%E8%AF%95/PSRR%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h1 id="1、测试原理"><a href="#1、测试原理" class="headerlink" title="1、测试原理"></a>1、测试原理</h1><p>参考TI上的指导说明<br><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/ldo-psrr">https://e2echina.ti.com/blogs_/b/analogwire/posts/ldo-psrr</a></p>
 <h2 id="2、使用PSM1700测试PSRR"><a href="#2、使用PSM1700测试PSRR" class="headerlink" title="2、使用PSM1700测试PSRR"></a>2、使用PSM1700测试PSRR</h2><p>PSRR测试原理说明</p>
 <p>我们现有的仪器是PSM1700，关键参数对比可参考下图</p>
@@ -746,7 +746,7 @@ pd\_toexcel(testData,filename)
   </entry>
   <entry>
     <title>相噪测试</title>
-    <url>/2023/09/14/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/</url>
+    <url>/2023/11/02/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<h1 id="1、是德9092A频谱仪测量相位噪声"><a href="#1、是德9092A频谱仪测量相位噪声" class="headerlink" title="1、是德9092A频谱仪测量相位噪声"></a>1、是德9092A频谱仪测量相位噪声</h1><p>参考1：<br>jitter基本知识： <a href="https://mazhaoxin.github.io/2018/10/20/Jitter_Basics/">https://mazhaoxin.github.io/2018/10/20/Jitter_Basics/</a><br>由相位噪声曲线计算积分相噪和Jitter的方法：</p>
 <p> <a href="https://mazhaoxin.github.io/2015/08/09/Calculate_IPN_Jitter_Based_On_Phase_Noise/">https://mazhaoxin.github.io/2015/08/09/Calculate_IPN_Jitter_Based_On_Phase_Noise/</a></p>
 <p>【使用频谱仪测试相噪的步骤如下】<br>测量相位噪声的步骤如下：我们以是德科技（原安捷伦） [N9020A]（<a href="https://www.keysight.com.cn/cn/zh/products/spectrum-analyzers-signal-analyzers.html">频谱分析仪（信号分析仪）-是德科技 Keysight</a>） 频谱仪为例，测量相位噪声的步骤如下：<br>相位噪声测量的是频域上的稳定性。</p>
@@ -833,7 +833,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
 <p>实测数据对比，误差在1ps左右</p>
 <p><img src="https://bu.dusays.com/2023/10/18/652febf5d307d.png" alt="image-20230914222101251"></p>
 <h1 id="仪器相噪指标能力"><a href="#仪器相噪指标能力" class="headerlink" title="仪器相噪指标能力"></a>仪器相噪指标能力</h1><p>PLL的相噪大概按这个指标看</p>
-<p><img src="/2023/09/14/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/" alt="img"></p>
+<p><img src="/2023/11/02/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/04%20%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/%E7%9B%B8%E5%99%AA%E6%B5%8B%E8%AF%95/" alt="img"></p>
 <p>9030频谱仪测试指标，9020比9030要差一些</p>
 <p><img src="https://bu.dusays.com/2023/10/18/652febf7766df.png" alt="image-20230914222132275"></p>
 <p>5052相噪仪测试指标</p>
@@ -849,7 +849,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
   </entry>
   <entry>
     <title>抖动</title>
-    <url>/2023/09/14/03%20%E6%8A%96%E5%8A%A8/%E6%8A%96%E5%8A%A8/</url>
+    <url>/2023/11/02/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/03%20%E6%8A%96%E5%8A%A8/%E6%8A%96%E5%8A%A8/</url>
     <content><![CDATA[<h1 id="1、Jitter-Noise"><a href="#1、Jitter-Noise" class="headerlink" title="1、Jitter &amp; Noise"></a>1、Jitter &amp; Noise</h1><p><strong>参考资料1：相噪与时钟抖动原文参考链接：</strong></p>
 <p> <a href="http://product.sitimechina.com/technology_details.php?id=92">http://product.sitimechina.com/technology_details.php?id=92</a><br><strong>参考资料2：jitter基础知识</strong>：</p>
 <p> <a href="https://mazhaoxin.github.io/2018/10/20/Jitter_Basics/">https://mazhaoxin.github.io/2018/10/20/Jitter_Basics/</a><br><strong>参考资料3：</strong>士德官网  利用时钟抖动分析降低串行数据应用中的误码率<br><strong>参考资料4：</strong>高速系统设计-抖动-噪声与信号完整性： <a href="https://pan.baidu.com/s/1lEbT7jHfFa4cNS8AuHJBWQ">https://pan.baidu.com/s/1lEbT7jHfFa4cNS8AuHJBWQ</a> 密码:u2hi<br><strong>参考资料5：</strong>SoC-PLL设计要求的权衡_Jeff Galloway： &#x2F;rnd&#x2F;zhanghao&#x2F;soc-pll设计要求的权衡_jeff_galloway.pdf</p>
@@ -961,7 +961,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
   </entry>
   <entry>
     <title>纹波噪声测试</title>
-    <url>/2023/09/11/02%20%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2/%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/</url>
+    <url>/2023/11/02/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/02%20%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2/%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="1、测试环境准备"><a href="#1、测试环境准备" class="headerlink" title="1、测试环境准备"></a><strong>1、测试环境准备</strong></h1><h2 id="1）使用专用电源完整性探头"><a href="#1）使用专用电源完整性探头" class="headerlink" title="1）使用专用电源完整性探头"></a><strong>1</strong>）使用专用电源完整性探头</h2><img src="https://bu.dusays.com/2023/10/18/652fea9fa6754.jpeg" alt="纹波测试探头" style="zoom:80%;">
 
 <p>优点：高带宽、高偏置补偿范围、高灵敏度以及 1:1 衰减比、极低的加性噪声</p>
@@ -999,7 +999,7 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
   </entry>
   <entry>
     <title>保持热爱，奔赴山海</title>
-    <url>/2023/09/10/01%20%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/%E4%BF%9D%E6%8C%81%E7%83%AD%E7%88%B1%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/</url>
+    <url>/2023/11/02/%E9%9A%8F%E7%AC%94/01%20%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/%E4%BF%9D%E6%8C%81%E7%83%AD%E7%88%B1%E5%A5%94%E8%B5%B4%E5%B1%B1%E6%B5%B7/</url>
     <content><![CDATA[<h1 id="写在开篇"><a href="#写在开篇" class="headerlink" title="写在开篇"></a><strong>写在开篇</strong></h1><p>hi，大家好，这是白桦第一篇推文，承蒙关照！</p>
 <p>以前工作加班很多，几乎没有自己的时间和空间，现在加班时间变少了，也终于有时间和精力仔细的思考和生活，所以这次想了很久，决定以长文的形式记录一段经历，来过这世界，不负生命和热爱！</p>
 <p>下面先简短回忆一下工作三年的点点滴滴和碎碎念吧。</p>
@@ -1121,5 +1121,36 @@ display(sprintf(&#39;Total\t\t%g\t%f\t%g&#39;,a_tol,a_tol_dBc,jt_tol));
       <tags>
         <tag>川西小环线</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>纹波噪声测试</title>
+    <url>/2023/09/11/02%20%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2/%E7%94%B5%E6%BA%90%E7%BA%B9%E6%B3%A2%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="1、测试环境准备"><a href="#1、测试环境准备" class="headerlink" title="1、测试环境准备"></a><strong>1、测试环境准备</strong></h1><h2 id="1）使用专用电源完整性探头"><a href="#1）使用专用电源完整性探头" class="headerlink" title="1）使用专用电源完整性探头"></a><strong>1</strong>）使用专用电源完整性探头</h2><img src="https://bu.dusays.com/2023/10/18/652fea9fa6754.jpeg" alt="纹波测试探头" style="zoom:80%;">
+
+<p>优点：高带宽、高偏置补偿范围、高灵敏度以及 1:1 衰减比、极低的加性噪声</p>
+<p>缺点：探头贵，（**w）是真的贵啊！土豪专用&#x3D;&#x3D;</p>
+<h2 id="2）使用无源探头测试"><a href="#2）使用无源探头测试" class="headerlink" title="2）使用无源探头测试"></a><strong>2</strong>）使用无源探头测试</h2><img src="https://bu.dusays.com/2023/10/18/652feaa9ee56d.png" alt="无源探头" style="zoom:50%;">
+
+<p>优点：测试环境易搭建</p>
+<p>缺点：测试精度不高，易引入噪声，测试不方便</p>
+<h2 id="3）使用-50ohm-同轴线缆-047-SAM半钢线缆-专用测试夹具"><a href="#3）使用-50ohm-同轴线缆-047-SAM半钢线缆-专用测试夹具" class="headerlink" title="3）使用**50ohm **同轴线缆+047 SAM半钢线缆&#x2F;专用测试夹具"></a><strong>3</strong>）使用**50ohm **同轴线缆+047 SAM半钢线缆&#x2F;专用测试夹具</h2><p>50ohm同轴线缆 BNC公头</p>
+<img src="https://bu.dusays.com/2023/10/18/652feadfbb20c.png" alt="同轴线" style="zoom:80%;">
+
+<img src="https://bu.dusays.com/2023/10/18/652feae059544.jpeg" alt="射频半钢线" style="zoom:80%;">
+
+<p>047射频半钢线</p>
+<p>0402纹波测试探针</p>
+<p> 优点：测试方便，低噪声，用此方法较多</p>
+<img src="https://bu.dusays.com/2023/10/18/652feae223282.jpeg" alt="双头探针" style="zoom:80%;">
+
+<p>此外还有一种双头探针夹具，常用于整板电源纹波测试</p>
+<h1 id="2、纹波测试注意事项"><a href="#2、纹波测试注意事项" class="headerlink" title="2、纹波测试注意事项"></a><strong>2</strong>、纹波测试注意事项</h1><p>示波器通道设置为AC耦合，示波器带宽设置为20Mhz，时基为us级别显示清楚纹波较为合适，不需要测试长余辉</p>
+<h1 id="3、噪声测试注意事项"><a href="#3、噪声测试注意事项" class="headerlink" title="3、噪声测试注意事项"></a><strong>3</strong>、噪声测试注意事项</h1><p>示波器通道设置为AC耦合，示波器带宽设置为500Mhz，时基设置为1ms以上，需要测试长余辉，累计300次以上，非固定要求，但是累计时间越长，可以统计更多的噪声，但是注意甄别测试引入的白噪声等干扰</p>
+<p>此外在测量低噪声的纹波或者噪声是，注意示波器探头或者单板环境等引入的底噪</p>
+<h1 id="4、纹波噪声定位案例"><a href="#4、纹波噪声定位案例" class="headerlink" title="4、纹波噪声定位案例"></a>4、纹波噪声定位案例</h1><h2 id="1）耦合引入"><a href="#1）耦合引入" class="headerlink" title="1）耦合引入"></a>1）耦合引入</h2><p>某器件电源输入有明显电源噪声，经定位发现是电源噪声是经过输入电容耦合到了器件电源上面，由于此时单板已不能改板，优化方案是去掉该输入电容</p>
+<h2 id="2）电源引入"><a href="#2）电源引入" class="headerlink" title="2）电源引入"></a>2）电源引入</h2><p>ADC测试发现底噪比较大，动态性能一直比较差，经定位是ADC的供电电源和参考电压采用了buck供电，优化方案是整改该供电方案，把buck供电改为LDO</p>
+<h2 id="3）其他"><a href="#3）其他" class="headerlink" title="3）其他"></a>3）其他</h2><p>纹波噪声是单板设计的重要性能指标，高速时钟、高性能ADC等对电源要求都相对比较高，通常选用LDO供电，除此以外输入输出电容封装、大小、温度系数、PCB布局等都会影响电路的综合性能，研发阶段通常情况下都必须跑高温做压力测试，针对buck、LDO、core电源（buck）拟定不同的电源测试方案，不然到了现网，出现了就是重大质量问题</p>
+<p><strong>时钟电源是硬件工程师的底裤，一定守住！</strong></p>
+]]></content>
   </entry>
 </search>
